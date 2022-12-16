@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Text to Speech Converter</title>
+    <style>
+        body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #333; }
+  
+        textarea{ width:80%;  padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem;height:100px }
+       
+         button { width:150px;background: #333; border: none; padding: 0 1rem; margin: 0.25rem; border-radius: 5px; outline: none; color: #fff; font-weight:bold; height: 35px;}
+
+         .wrapper {
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+            background-color: #ccc;
+            width: 500px;
+            margin: 0 auto;
+            padding: 10px;
+            border : 2px solid #ddd;
+            border-radius : 2px;
+            text-align: center;
+         }
+        
+      </style>
+    </head>
+   <body>
+      <br> <br> <br> <br> <br> <br>
+      <div class="wrapper">
+     <h2> Text to Speech Converter </h2>
+      <form action="/text" method="POST">
+     <span> <b>Enter Text </b>  </span>  <br> <br> <div id="text-container">
+         <textarea id="textContent" name="textcontent">
+
+         </textarea>
+      </div>
+      <br> 
+      <button type="submit" name="submit" > Submit</button>
+      </form>
+      </div>
+      </body>
+      </html>
+   </html>
